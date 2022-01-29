@@ -179,7 +179,7 @@ def file2matrix(filename):
         line = line.strip()
         # 以 '\t' 切割字符串
         listFromLine = line.split('\t')
-        # 每列的属性数据
+        # 每行的属性数据
         returnMat[index, :] = listFromLine[0:3]
         # 每列的类别数据，就是 label 标签数据
         classLabelVector.append(int(listFromLine[-1]))
